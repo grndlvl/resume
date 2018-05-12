@@ -8,4 +8,4 @@ I created this as managing a resume on Google Docs was hard and changing any for
 ![Resume Screenshot](/resume_preview.png)
 
 ### License
-Format is MIT but all the data is owned by Sourabh Bajaj.
+Format is MIT but all the data is owned by Jonathan DeLaigle.
