@@ -13,9 +13,11 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage[colorlinks=true, urlcolor=accent, linkcolor=accent]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{xcolor}
 
+\definecolor{accent}{HTML}{6B21A8}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -39,7 +41,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{accent}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
@@ -74,13 +76,13 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://www.grndlvl.com/}{\Large Jonathan DeLaigle}} & Email : \href{mailto:delaigle.jonathan@gmail.com}{delaigle.jonathan@gmail.com}\\
-  \href{https://www.grndlvl.com/}{grndlvl.com} & Mobile : +1-706-589-6189 \\
+  \textbf{{\Large \textcolor{accent}{J}onathan \textcolor{accent}{D}eLaigle}} & Email : \href{mailto:delaigle.jonathan@gmail.com}{delaigle.jonathan@gmail.com}\\
+  \href{https://www.grndlvl.com/}{grndlvl.com} & Mobile : \href{tel:+17065896189}{+1-706-589-6189} \\
 \end{tabular*}
 
 
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{\textcolor{accent}{E}xperience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
@@ -141,7 +143,7 @@
 
   \resumeSubHeadingListEnd
 
-\section{Technical Skills}
+\section{\textcolor{accent}{T}echnical Skills}
 
 \resumeSubHeadingListStart
   \resumeSubItem{Tools}{Docker, Kubernetes, Git, GitHub Actions, CircleCI, Pantheon, AWS, Google Cloud}
@@ -149,7 +151,7 @@
 \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
-\section{Education}
+\section{\textcolor{accent}{E}ducation}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Augusta University}{Augusta, GA}
