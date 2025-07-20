@@ -18,6 +18,4 @@ jobs:
           credentials: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
           folderId: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
           filename: jonathan_delaigle.pdf
-          name: JonathanDeLaigle.pdf
-          mimeType: application/pdf
           overwrite: true
