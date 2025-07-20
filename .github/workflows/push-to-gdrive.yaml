@@ -1,0 +1,21 @@
+# .github/workflows/main.yml
+name: Push to Google Drive
+on:
+  push:
+    branches:
+      - master
+jobs:
+  Push-to-Google-Drive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Upload to gdrive
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
+          filename: JonathanDeLaigle.pdf
+          mimeType: application/pdf
+          overwrite: true
