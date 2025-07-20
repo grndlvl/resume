@@ -16,6 +16,7 @@ jobs:
         uses: adityak74/google-drive-upload-git-action@main
         with:
           credentials: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
-          filename: JonathanDeLaigle.pdf
+          filename: jonathan_delaigle.pdf
+          name: JonathanDeLaigle.pdf
           mimeType: application/pdf
           overwrite: true
